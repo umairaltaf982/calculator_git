@@ -1,9 +1,15 @@
 public class Main {
     public int add(int a , int b){
-        return a+b;
+        if(a >= 0 && b >= 0 && Character.isDigit(a) && Character.isDigit(b)) {
+            return a + b;
+        }
+        return 0;
     }
    public int multiplication(int a ,int b){
-        return a*b;
+       if(a >= 0 && b >= 0 && Character.isDigit(a) && Character.isDigit(b)) {
+           return a * b;
+       }
+       return 0;
    }
     public static void main(String[] args) {
         Main m= new Main();
